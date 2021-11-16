@@ -17,7 +17,6 @@ def load_data():
     # Create Table
     cur.execute("""CREATE TABLE fiction (first_name VARCHAR(50),last_name VARCHAR(50),
             email VARCHAR(50),location VARCHAR(50), visited_date DATE NOT NULL)""")
-
     # Loading a pandas dataframe into the database.
     for row in df.itertuples():          
         cur.execute("""INSERT INTO fiction (first_name,last_name, email,location, visited_date)
