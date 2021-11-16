@@ -14,7 +14,7 @@ def load_data():
     conn = psycopg2.connect(host="localhost", port = 5432, database="test", user="postgres", password="postgres")
     # Create a cursor object
     cur = conn.cursor() 
-    # Create Table man exeption should be added 
+    # Create Table
 
     # cur.execute("""CREATE TABLE fiction (first_name VARCHAR(50),last_name VARCHAR(50),
     #         email VARCHAR(50),location VARCHAR(50), visited_date DATE NOT NULL)""")
