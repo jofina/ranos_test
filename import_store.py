@@ -2,7 +2,7 @@ import pandas as pd
 import psycopg2
 import flask
 from flask import jsonify
-# creates flask application object which conbtains data of the application and also the methods.
+# creates flask application object which contains data of the application and also the methods.
 app = flask.Flask(__name__)
 # Starts the debugger, if the code is malformed we get an error. 
 app.config["DEBUG"] = True
